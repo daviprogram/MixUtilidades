@@ -1,7 +1,44 @@
 body {
-    background-color: #f8f9fa;
-}
+        background-color: #f8f9fa;
+        }
 
-.card {
-    margin-bottom: 20px;
+        .card {
+            margin-bottom: 20px;
+                transition: 0.3s ease; /* Adiciona uma transição suave */
+                }
+
+                .card:hover {
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        transform: scale(1.02);
+                        }
+
+                        .card-img-top {
+                            height: 200px;
+                                object-fit: cover;
+                                }
+
+                                .card-title {
+                                    font-size: 1.25rem;
+                                        font-weight: bold;
+                                            color: #333;
+                                            }
+
+                                            .card-text {
+                                                font-size: 1.1rem;
+                                                    color: #007bff;
+                                                    }
+
+                                                    .navbar {
+                                                        background-color: #007bff;
+                                                            border-bottom: 2px solid #0056b3;
+                                                            }
+
+                                                            .navbar-brand, .nav-link {
+                                                                color: #fff !important;
+                                                                }
+
+                                                                .nav-link:hover {
+                                                                    color: #ffd700 !important;
+                                                                    }
+                                                                    
 }
