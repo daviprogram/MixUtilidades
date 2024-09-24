@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row mt-5">
+    {% for produto in produtos %}
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top" src="{{ url_for('static', filename='images/' + produto['imagem']) }}" alt="{{ produto['nome'] }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ produto['nome'] }}</h5>
+                <p class="card-text">{{ produto['preco'] }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
